@@ -14,7 +14,7 @@ namespace HelloWorld
             var name = Console.ReadLine();
             Console.WriteLine("Lever du? (No / Yes)");
             bool alive = false;
-            if (Console.ReadLine() == "Yes") {
+            if (Console.ReadLine().ToLower() == "yes") {
                 alive = true;
             }
 

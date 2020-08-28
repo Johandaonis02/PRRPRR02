@@ -10,3 +10,4 @@ C:\Users\johan.daun\Documents\GitHub\PRRPRR02\HelloWorld\HelloWorld\obj\Debug\ne
 C:\Users\johan.daun\Documents\GitHub\PRRPRR02\HelloWorld\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.dll
 C:\Users\johan.daun\Documents\GitHub\PRRPRR02\HelloWorld\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.pdb
 C:\Users\johan.daun\Documents\GitHub\PRRPRR02\HelloWorld\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.genruntimeconfig.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\HelloWorld\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.csprojAssemblyReference.cache
