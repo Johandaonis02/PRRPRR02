@@ -8,8 +8,17 @@ namespace HelloWorld
         {
             var age = 0;
             Console.WriteLine("Hallå där! Hur gammal är du?");
-            var input = Console.ReadLine();
-            age = int.Parse(input);
+            while (true)
+            {
+                var input = Console.ReadLine();
+                age = int.Parse(input);
+                if(age > 130){
+                    Console.WriteLine("no");
+                }
+                else{
+                    break;
+                }
+            }
             Console.WriteLine("Vad heter du?");
             var name = Console.ReadLine();
             Console.WriteLine("Lever du? (No / Yes)");
@@ -17,14 +26,25 @@ namespace HelloWorld
             if (Console.ReadLine().ToLower() == "yes") {
                 alive = true;
             }
+            else if(Console.ReadLine().ToLower() != "no"){
+                Console.WriteLine("No? Ok")
+            }
 
             Console.WriteLine("Du heter " + name + ", du är " + age + " år och du " );
-            if (alive == true) {
+            if (alive == true)
+            {
                 Console.WriteLine("lever.");
             }
-            else {
+            else
+            {
                 Console.WriteLine("lever inte.");
             }
+
+            Console.WriteLine("Jag gillar jämna tal");
+            for (int i = 0; i < 10; i += 2){
+                Console.WriteLine(i);
+            }
+
             Console.ReadLine();
         }
     }
