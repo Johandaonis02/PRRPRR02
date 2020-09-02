@@ -33,7 +33,7 @@ namespace HelloWorld
                 case "Björn":
                     Console.WriteLine("Vet inte om ö funkar");
                     break;
-                case "GW_Person":
+                case "GW_Persson":
                     Console.WriteLine("Jag gillar dig!");
                     break;
                 default:
