@@ -14,6 +14,10 @@ namespace HelloWorld2
             }  
             
             Console.WriteLine(names[0] + " är här, och " + names[1] + " är här, å så roligt att "+ names[2] +" är här. Och i vårt glada gänga har vi " + names[3] + " här igen, å så roligt att " + names[4] + " här...");
+
+            for (int name = 4; name >= 0; name--){
+                Console.WriteLine(names[name]);
+            }
         }
     }
 }
