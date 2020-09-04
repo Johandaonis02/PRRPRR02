@@ -1,15 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace HelloWorld2
 {
+    class Person
+    {
+        public int Age { get; set; }
+
+        public string Name { get; set; }
+    }
     class Program
     {
         static void Main(string[] args)
         {
+            var personList = new List<Person>();
+
             string[] names = new string[5];
 
             for (int i = 0; i < names.Length; i++){
+                
                 names[i] = Console.ReadLine();
             }  
             
@@ -18,6 +28,8 @@ namespace HelloWorld2
             for (int name = 4; name >= 0; name--){
                 Console.WriteLine(names[name]);
             }
+            
+            string[][] namesAge = new string[5][2];
         }
     }
 }
