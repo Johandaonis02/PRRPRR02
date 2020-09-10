@@ -1,0 +1,13 @@
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Metoder\Metoder\obj\Debug\netcoreapp3.1\Metoder.csprojAssemblyReference.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Metoder\Metoder\obj\Debug\netcoreapp3.1\Metoder.AssemblyInfoInputs.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Metoder\Metoder\obj\Debug\netcoreapp3.1\Metoder.AssemblyInfo.cs
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Metoder\Metoder\obj\Debug\netcoreapp3.1\Metoder.csproj.CoreCompileInputs.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Metoder\Metoder\bin\Debug\netcoreapp3.1\Metoder.exe
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Metoder\Metoder\bin\Debug\netcoreapp3.1\Metoder.deps.json
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Metoder\Metoder\bin\Debug\netcoreapp3.1\Metoder.runtimeconfig.json
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Metoder\Metoder\bin\Debug\netcoreapp3.1\Metoder.runtimeconfig.dev.json
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Metoder\Metoder\bin\Debug\netcoreapp3.1\Metoder.dll
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Metoder\Metoder\bin\Debug\netcoreapp3.1\Metoder.pdb
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Metoder\Metoder\obj\Debug\netcoreapp3.1\Metoder.dll
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Metoder\Metoder\obj\Debug\netcoreapp3.1\Metoder.pdb
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Metoder\Metoder\obj\Debug\netcoreapp3.1\Metoder.genruntimeconfig.cache
