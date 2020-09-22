@@ -7,6 +7,28 @@ namespace Metoder
     class Program
     {
         static void Main(string[] args){
+
+
+            PersonTest niklas = new PersonTest();
+
+            niklas._name = "Niklas";
+            niklas._age = 200;
+            niklas._height = 187;
+
+            AnimalTest pet = new AnimalTest();
+
+            pet._name = "Smulan";
+            pet._species = "Kattmisse";
+
+            niklas._pet = pet;
+
+            niklas.Move();
+            niklas.Eat();
+            niklas.Communicate();
+
+            Console.WriteLine(niklas._pet._name);
+
+
             Console.WriteLine("Hello World!");
             int number1 = 10;
             int number2 = 23;
