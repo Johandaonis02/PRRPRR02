@@ -20,6 +20,8 @@ namespace Metoder
             pet._name = "Smulan";
             pet._species = "Kattmisse";
 
+            //te
+
             niklas._pet = pet;
 
             niklas.Move();
