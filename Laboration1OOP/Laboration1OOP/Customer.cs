@@ -6,13 +6,7 @@ namespace Laboration1OOP {
     class Customer {
         public string _name;
         public int _age;
+        public List<Product> _cart = new List<Product>();
 
-        public void WantToBuyStuff() {
-            Console.WriteLine("Hej, jag heter " + _name + " och jag vill köpa produkter");
-        }
-
-        public void TellAge() {
-            Console.WriteLine("Jag är " + _age + " år");
-        }
     }
 }

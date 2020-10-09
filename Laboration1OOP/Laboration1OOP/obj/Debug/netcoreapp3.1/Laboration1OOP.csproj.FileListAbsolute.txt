@@ -1,0 +1,13 @@
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Laboration1OOP\Laboration1OOP\obj\Debug\netcoreapp3.1\Laboration1OOP.csprojAssemblyReference.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Laboration1OOP\Laboration1OOP\obj\Debug\netcoreapp3.1\Laboration1OOP.AssemblyInfoInputs.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Laboration1OOP\Laboration1OOP\obj\Debug\netcoreapp3.1\Laboration1OOP.AssemblyInfo.cs
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Laboration1OOP\Laboration1OOP\obj\Debug\netcoreapp3.1\Laboration1OOP.csproj.CoreCompileInputs.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Laboration1OOP\Laboration1OOP\bin\Debug\netcoreapp3.1\Laboration1OOP.exe
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Laboration1OOP\Laboration1OOP\bin\Debug\netcoreapp3.1\Laboration1OOP.deps.json
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Laboration1OOP\Laboration1OOP\bin\Debug\netcoreapp3.1\Laboration1OOP.runtimeconfig.json
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Laboration1OOP\Laboration1OOP\bin\Debug\netcoreapp3.1\Laboration1OOP.runtimeconfig.dev.json
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Laboration1OOP\Laboration1OOP\bin\Debug\netcoreapp3.1\Laboration1OOP.dll
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Laboration1OOP\Laboration1OOP\bin\Debug\netcoreapp3.1\Laboration1OOP.pdb
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Laboration1OOP\Laboration1OOP\obj\Debug\netcoreapp3.1\Laboration1OOP.dll
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Laboration1OOP\Laboration1OOP\obj\Debug\netcoreapp3.1\Laboration1OOP.pdb
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Laboration1OOP\Laboration1OOP\obj\Debug\netcoreapp3.1\Laboration1OOP.genruntimeconfig.cache
