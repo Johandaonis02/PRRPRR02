@@ -18,10 +18,16 @@ namespace Laboration1OOP{
                 customer._age = rand.Next(30);
 
                 while (true){
-                    Console.WriteLine("Skriv 1 om du vill köpa en banan, skriv 2 om du vill köpa snus, skriv klar när du är klar");
+                    Console.WriteLine("Skriv 1 om du vill köpa en banan, 2 för snus, klar för klar eller så kan du skriva vad du vill för att se om det finns");
                     String WhatCustomerWant = Console.ReadLine();
 
-                    Product product1 = new Product();
+                    if (WhatCustomerWant == "cat"){
+                        Animal product1 = new Animal();
+                    }
+                    else{
+                        Product product1 = new Product();
+                    }
+                    
                     if (WhatCustomerWant == "klar"){
                         break;
                     }
