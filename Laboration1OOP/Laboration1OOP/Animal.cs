@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Laboration1OOP
 {
-    class Animal
-    {
+    class Animal : Product{
+        public int _cuteness;
     }
 }

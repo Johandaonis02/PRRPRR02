@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Laboration1OOP
 {
-    class Vegetable
-    {
+    class Vegetable : Product{
+        int _healthiness;
     }
 }
