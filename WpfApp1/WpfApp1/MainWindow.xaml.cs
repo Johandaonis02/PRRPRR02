@@ -18,22 +18,22 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
-    {
 
-        public MainWindow()
-        {
+    
+    public partial class MainWindow : Window{
+
+        
+
+        public MainWindow(){
             InitializeComponent();
         }
 
-        private void OkButton_Click(object sender, RoutedEventArgs e)
-        {
+        private void OkButton_Click(object sender, RoutedEventArgs e){
 
             var button = e.Source as Button;
             if (JaText.Text == "error"){
                 JaText.Text = "";
             }
-
             switch (Grid.GetColumn(button) + 5 * Grid.GetRow(button)){
                 case 3:
                     if (JaText.Text.Length != 0)
@@ -45,9 +45,13 @@ namespace WpfApp1
                         JaText.Text = "error";
                     }
                     break;
-
+                    
                 case 8:
                     JaText.Text = "";
+                    break;
+
+                case 13:
+                    JaText.Text += "ans";
                     break;
 
                 case 4:
@@ -71,10 +75,8 @@ namespace WpfApp1
                             break;
                     }
 
-                    if (JaText.Text[JaText.Text.Length - 1] != operatorMini)
-                    {
-                        if (JaText.Text.Length != 0)
-                        {
+                    if (JaText.Text[JaText.Text.Length - 1] != '+' && JaText.Text[JaText.Text.Length - 1] != '-' && JaText.Text[JaText.Text.Length - 1] != '*' && JaText.Text[JaText.Text.Length - 1] != '/'){
+                        if (JaText.Text.Length != 0){
                             JaText.Text += operatorMini;
                         }
                     }
@@ -86,16 +88,12 @@ namespace WpfApp1
                     int result = 0;
                     int theNumberIWantToAdd = 0;
 
-                    while (JaText.Text.Length > 0)
-                    {
-                        if (JaText.Text[0] == '0' || JaText.Text[0] == '1' || JaText.Text[0] == '2' || JaText.Text[0] == '3' || JaText.Text[0] == '4' || JaText.Text[0] == '5' || JaText.Text[0] == '6' || JaText.Text[0] == '7' || JaText.Text[0] == '8' || JaText.Text[0] == '9')
-                        {
+                    while (JaText.Text.Length > 0){
+                        if (JaText.Text[0] == '0' || JaText.Text[0] == '1' || JaText.Text[0] == '2' || JaText.Text[0] == '3' || JaText.Text[0] == '4' || JaText.Text[0] == '5' || JaText.Text[0] == '6' || JaText.Text[0] == '7' || JaText.Text[0] == '8' || JaText.Text[0] == '9'){
                             theNumberIWantToAdd = theNumberIWantToAdd * 10 + int.Parse(JaText.Text[0].ToString());
                         }
-                        else
-                        {
-                            switch (nextOperator)
-                            {
+                        else{
+                            switch (nextOperator){
                                 case '+':
                                     result += theNumberIWantToAdd;
                                     break;
@@ -108,6 +106,9 @@ namespace WpfApp1
                                 case '/':
                                     result /= theNumberIWantToAdd;
                                     break;
+                               /** case 'a':
+                                    theNumberIWantToAdd = answer;
+                                    break; */
                             }
 
                             theNumberIWantToAdd = 0;
@@ -119,7 +120,7 @@ namespace WpfApp1
                     //result = Math.Round(result * 100)/100;
 
                     JaText.Text = result.ToString();
-
+                    //answer = result;
                     break;
                 default:
                     JaText.Text += Grid.GetColumn(button) + 3 * Grid.GetRow(button);
