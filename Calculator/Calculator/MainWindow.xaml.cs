@@ -26,9 +26,20 @@ namespace Calculator
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
             var button = e.Source as Button;
-            switch (Grid.GetColumn(button) + 5 * Grid.GetRow(button))
-            {
-
+            switch (Grid.GetColumn(button) + 5 * Grid.GetRow(button)){
+                case 3:
+                    if (JaText.Text.Length != 0)
+                    {
+                        JaText.Text = JaText.Text.Remove(JaText.Text.Length - 1);
+                    }
+                    else
+                    {
+                        JaText.Text = "error";
+                    }
+                    break;
+                default:
+                    JaText.Text += Grid.GetColumn(button) + 3 * Grid.GetRow(button);
+                    break;
             }
         }
     }

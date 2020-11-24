@@ -16,3 +16,4 @@ C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Calculator\Calculator\obj\Debug\ne
 C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.dll
 C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.pdb
 C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.genruntimeconfig.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.csprojAssemblyReference.cache
