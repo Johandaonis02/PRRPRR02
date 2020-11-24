@@ -23,9 +23,13 @@ namespace Calculator
 
         }
 
-        private void OkButton_Click(object sender, RoutedEventArgs e)
-        {
+        private void OkButton_Click(object sender, RoutedEventArgs e){
             var button = e.Source as Button;
+
+            if (JaText.Text == "error"){
+                JaText.Text = "";
+            }
+
             switch (Grid.GetColumn(button) + 5 * Grid.GetRow(button)){
                 case 3:
                     if (JaText.Text.Length != 0)
@@ -37,6 +41,44 @@ namespace Calculator
                         JaText.Text = "error";
                     }
                     break;
+                case 8:
+                    JaText.Text = "";
+                    break;
+                case 13:
+                    JaText.Text += "ans";
+                    break;
+                case 4:
+                case 9:
+                case 14:
+                case 19:
+                    char operatorMini = 'J';
+
+                    switch (Grid.GetColumn(button) + 5 * Grid.GetRow(button))
+                    {
+                        case 4:
+                            operatorMini = '+';
+                            break;
+                        case 9:
+                            operatorMini = '-';
+                            break;
+                        case 14:
+                            operatorMini = '*';
+                            break;
+                        case 19:
+                            operatorMini = '/';
+                            break;
+                    }
+
+                    if (JaText.Text[JaText.Text.Length - 1] != '+' && JaText.Text[JaText.Text.Length - 1] != '-' && JaText.Text[JaText.Text.Length - 1] != '*' && JaText.Text[JaText.Text.Length - 1] != '/')
+                    {
+                        if (JaText.Text.Length != 0)
+                        {
+                            JaText.Text += operatorMini;
+                        }
+                    }
+                    break;
+
+
                 default:
                     JaText.Text += Grid.GetColumn(button) + 3 * Grid.GetRow(button);
                     break;
