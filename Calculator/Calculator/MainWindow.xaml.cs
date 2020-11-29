@@ -79,10 +79,8 @@ namespace WpfApp1
                             break;
                     }
 
-                    if (DisplayOfNumbers.Text[DisplayOfNumbers.Text.Length - 1] != '+' && DisplayOfNumbers.Text[DisplayOfNumbers.Text.Length - 1] != '-' && DisplayOfNumbers.Text[DisplayOfNumbers.Text.Length - 1] != '*' && DisplayOfNumbers.Text[DisplayOfNumbers.Text.Length - 1] != '/')
-                    {
-                        if (DisplayOfNumbers.Text.Length != 0)
-                        {
+                    if (DisplayOfNumbers.Text[DisplayOfNumbers.Text.Length - 1] != '+' && DisplayOfNumbers.Text[DisplayOfNumbers.Text.Length - 1] != '-' && DisplayOfNumbers.Text[DisplayOfNumbers.Text.Length - 1] != '*' && DisplayOfNumbers.Text[DisplayOfNumbers.Text.Length - 1] != '/'){
+                        if (DisplayOfNumbers.Text.Length != 0){
                             DisplayOfNumbers.Text += operatorMini;
                         }
                     }
@@ -98,7 +96,8 @@ namespace WpfApp1
                     while (DisplayOfNumbers.Text.Length > 0){
                         
                         if (duodecimals && !(DisplayOfNumbers.Text[0] == '+' || DisplayOfNumbers.Text[0] == '-' || DisplayOfNumbers.Text[0] == '*' || DisplayOfNumbers.Text[0] == '/')){
-                            
+
+                            //Number after the decimal
                             if (DisplayOfNumbers.Text[0] == '0' || DisplayOfNumbers.Text[0] == '1' || DisplayOfNumbers.Text[0] == '2' || DisplayOfNumbers.Text[0] == '3' || DisplayOfNumbers.Text[0] == '4' || DisplayOfNumbers.Text[0] == '5' || DisplayOfNumbers.Text[0] == '6' || DisplayOfNumbers.Text[0] == '7' || DisplayOfNumbers.Text[0] == '8' || DisplayOfNumbers.Text[0] == '9'){
                                 theNumberIWantToAdd += double.Parse(DisplayOfNumbers.Text[0].ToString()) * Math.Pow(1/12, positionBehindDuodecimal);
                             }
@@ -111,6 +110,7 @@ namespace WpfApp1
 
                             positionBehindDuodecimal++;
                         }
+                        //Number before the decimal
                         else if (DisplayOfNumbers.Text[0] == '0' || DisplayOfNumbers.Text[0] == '1' || DisplayOfNumbers.Text[0] == '2' || DisplayOfNumbers.Text[0] == '3' || DisplayOfNumbers.Text[0] == '4' || DisplayOfNumbers.Text[0] == '5' || DisplayOfNumbers.Text[0] == '6' || DisplayOfNumbers.Text[0] == '7' || DisplayOfNumbers.Text[0] == '8' || DisplayOfNumbers.Text[0] == '9'){
                             theNumberIWantToAdd = theNumberIWantToAdd * 12 + double.Parse(DisplayOfNumbers.Text[0].ToString());
                         }
@@ -137,9 +137,6 @@ namespace WpfApp1
                                 case '/':
                                     result /= theNumberIWantToAdd;
                                     break;
-                                    /** case 'a':
-                                         theNumberIWantToAdd = answer;
-                                         break; */
                             }
 
                             duodecimals = false;
@@ -172,10 +169,11 @@ namespace WpfApp1
             }
         }
 
-        public string decToDuoDec(double dec)
-        {
+        public string decToDuoDec(double dec) {
+
             string DuoDecResult = "";
 
+            //Text before the duodecimal
             while (dec >= 1)
             {
                 if (Math.Floor(dec % 12) == 10)
@@ -190,29 +188,38 @@ namespace WpfApp1
                 {
                     DuoDecResult = Math.Floor(dec % 12) + DuoDecResult;
                 }
-                dec -= dec % 12;
-                dec /= 12;
+                dec -= Math.Floor(dec % 12);
+                dec = Math.Floor(dec/12) + dec - Math.Floor(dec);
             }
 
+            //Fix rounding issue
+            if (double.MaxValue > dec * Math.Pow(12, 10)){
+                dec *= Math.Pow(12, 10);
+                if (dec % 1 > 0.5){
+                    dec = Math.Ceiling(dec);
+                }
+                dec /= Math.Pow(12, 10);
+            }
+
+            //Text after the duodecimal
             DuoDecResult += '.';
-            int positionBehindDuodecimal = 1;
+            double positionBehindDuodecimal = 0;
             while (positionBehindDuodecimal < 10)
             {
+                positionBehindDuodecimal++;
                 dec *= 12;
-                
-                if (Math.Floor(dec) == 10){
+
+                if (Math.Floor(dec) == 10.0){
                     DuoDecResult = DuoDecResult + '↊';
                 }
-                else if (Math.Floor(dec) == 11){
+                else if (Math.Floor(dec) == 11.0){
                     DuoDecResult = DuoDecResult + '↋';
                 }
                 else{
                     DuoDecResult = DuoDecResult + Math.Floor(dec);
                 }
                 dec -= Math.Floor(dec);
-                positionBehindDuodecimal++;
             }
-            
 
             return DuoDecResult;
         }
