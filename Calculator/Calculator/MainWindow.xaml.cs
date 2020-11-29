@@ -37,6 +37,7 @@ namespace WpfApp1
             if (DisplayOfNumbers.Text == "error"){
                 DisplayOfNumbers.Text = "";
             }
+
             switch (Grid.GetColumn(button) + 5 * Grid.GetRow(button)){
                 case 3:
                     if (DisplayOfNumbers.Text.Length != 0)
@@ -93,7 +94,7 @@ namespace WpfApp1
                     double result = 0;
                     double theNumberIWantToAdd = 0;
                     bool duodecimals = false;
-                    int positionBehindDuodecimal = 1;
+                    double positionBehindDuodecimal = 1;
                     while (DisplayOfNumbers.Text.Length > 0){
                         
                         if (duodecimals && !(DisplayOfNumbers.Text[0] == '+' || DisplayOfNumbers.Text[0] == '-' || DisplayOfNumbers.Text[0] == '*' || DisplayOfNumbers.Text[0] == '/')){
@@ -150,10 +151,9 @@ namespace WpfApp1
 
                         DisplayOfNumbers.Text = DisplayOfNumbers.Text.Substring(1);
                     }
-                    //result = Math.Round(result * 100)/100;
 
                     DisplayOfNumbers.Text = decToDuoDec(result);
-                    //answer = result;
+
                     break;
 
                 case 16:
@@ -176,39 +176,43 @@ namespace WpfApp1
         {
             string DuoDecResult = "";
 
-            while(dec >= 1){
-                if(Math.Floor(dec % 12) == 10){
-                    DuoDecResult = '↊' + DuoDecResult;
-                    dec /= 12;
-                }
-                else if (Math.Floor(dec % 12) == 11){
-                    DuoDecResult = '↋' + DuoDecResult;
-                    dec /= 12;
-                }
-                else{
-                    DuoDecResult = Math.Floor(dec % 12) + DuoDecResult;
-                    dec /= 12;
-                }
-            }
-            /**
-            while (dec != 0){
-                if (dec % 12 == 10)
+            while (dec >= 1)
+            {
+                if (Math.Floor(dec % 12) == 10)
                 {
                     DuoDecResult = '↊' + DuoDecResult;
-                    dec /= 12;
                 }
-                else if (dec % 12 == 11)
+                else if (Math.Floor(dec % 12) == 11)
                 {
                     DuoDecResult = '↋' + DuoDecResult;
-                    dec /= 12;
                 }
                 else
                 {
-                    DuoDecResult = dec % 12 + DuoDecResult;
-                    dec /= 12;
+                    DuoDecResult = Math.Floor(dec % 12) + DuoDecResult;
                 }
+                dec -= dec % 12;
+                dec /= 12;
             }
-            */
+
+            DuoDecResult += '.';
+            int positionBehindDuodecimal = 1;
+            while (positionBehindDuodecimal < 10)
+            {
+                dec *= 12;
+                
+                if (Math.Floor(dec) == 10){
+                    DuoDecResult = DuoDecResult + '↊';
+                }
+                else if (Math.Floor(dec) == 11){
+                    DuoDecResult = DuoDecResult + '↋';
+                }
+                else{
+                    DuoDecResult = DuoDecResult + Math.Floor(dec);
+                }
+                dec -= Math.Floor(dec);
+                positionBehindDuodecimal++;
+            }
+            
 
             return DuoDecResult;
         }
