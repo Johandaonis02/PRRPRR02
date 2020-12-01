@@ -102,6 +102,7 @@ namespace WpfApp1
                     double theNumberIWantToAdd = 0;
                     bool duodecimals = false;
                     double positionBehindDuodecimal = 1;
+                    bool shouldDisplayError = false;
                     while (DisplayOfNumbers.Text.Length > 0){
                         
                         if (duodecimals && !(DisplayOfNumbers.Text[0] == '+' || DisplayOfNumbers.Text[0] == '-' || DisplayOfNumbers.Text[0] == '*' || DisplayOfNumbers.Text[0] == '/')){
@@ -146,10 +147,12 @@ namespace WpfApp1
                                     result *= theNumberIWantToAdd;
                                     break;
                                 case '/':
-                                    if(theNumberIWantToAdd == 0){
-                                        DisplayOfNumbers.Text = "Error";
+                                    if (theNumberIWantToAdd == 0.0){
+                                        shouldDisplayError = true;
+                                        break;
                                     }
                                     result /= theNumberIWantToAdd;
+                                    
                                     break;
                             }
 
@@ -163,8 +166,10 @@ namespace WpfApp1
                         DisplayOfNumbers.Text = DisplayOfNumbers.Text.Substring(1);
                     }
 
-                    DisplayOfNumbers.Text = decToDuoDec(result);
-
+                    DisplayOfNumbers.Text = DecToDuoDec(result);
+                    if (shouldDisplayError){
+                        DisplayOfNumbers.Text = "Error";
+                    }
                     break;
 
                 case 16:
@@ -183,7 +188,7 @@ namespace WpfApp1
             }
         }
 
-        public string decToDuoDec(double dec) {
+        public string DecToDuoDec(double dec) {
 
             string DuoDecResult = "";
 
