@@ -1,0 +1,13 @@
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\LaborationAbstraktion\LaborationAbstraktion\bin\Debug\netcoreapp3.1\LaborationAbstraktion.exe
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\LaborationAbstraktion\LaborationAbstraktion\bin\Debug\netcoreapp3.1\LaborationAbstraktion.deps.json
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\LaborationAbstraktion\LaborationAbstraktion\bin\Debug\netcoreapp3.1\LaborationAbstraktion.runtimeconfig.json
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\LaborationAbstraktion\LaborationAbstraktion\bin\Debug\netcoreapp3.1\LaborationAbstraktion.runtimeconfig.dev.json
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\LaborationAbstraktion\LaborationAbstraktion\bin\Debug\netcoreapp3.1\LaborationAbstraktion.dll
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\LaborationAbstraktion\LaborationAbstraktion\bin\Debug\netcoreapp3.1\LaborationAbstraktion.pdb
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\LaborationAbstraktion\LaborationAbstraktion\obj\Debug\netcoreapp3.1\LaborationAbstraktion.csprojAssemblyReference.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\LaborationAbstraktion\LaborationAbstraktion\obj\Debug\netcoreapp3.1\LaborationAbstraktion.AssemblyInfoInputs.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\LaborationAbstraktion\LaborationAbstraktion\obj\Debug\netcoreapp3.1\LaborationAbstraktion.AssemblyInfo.cs
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\LaborationAbstraktion\LaborationAbstraktion\obj\Debug\netcoreapp3.1\LaborationAbstraktion.csproj.CoreCompileInputs.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\LaborationAbstraktion\LaborationAbstraktion\obj\Debug\netcoreapp3.1\LaborationAbstraktion.dll
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\LaborationAbstraktion\LaborationAbstraktion\obj\Debug\netcoreapp3.1\LaborationAbstraktion.pdb
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\LaborationAbstraktion\LaborationAbstraktion\obj\Debug\netcoreapp3.1\LaborationAbstraktion.genruntimeconfig.cache
