@@ -10,15 +10,13 @@ namespace StrategyPatternDemo
             Console.WriteLine("Vilket djur vill du köpa? (Katt, hund, apa)");
             string animal = Console.ReadLine().ToLower();
 
-         //   ICalculationStrategy strat;
+            ICost cost;
 
             Console.WriteLine("Hur många armar ska den ha?");
-            int numberOfArms;
-            numberOfArms = Convert.ToInt32(Console.ReadLine());
+            int numberOfArms = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Hur många ben ska den ha?");
-            int numberOfLegs;
-            numberOfLegs = Convert.ToInt32(Console.ReadLine());
+            int numberOfLegs = Convert.ToInt32(Console.ReadLine());
 
             switch (animal)
             {
@@ -33,12 +31,12 @@ namespace StrategyPatternDemo
                     break;
                 default:
                     Console.WriteLine("Error");
-                    //strat = new AdditionStrategy();
+                    cost = new DogCost();
                     break;
             }
 
-            var calc = new Calculation(cost);
-            calc.CalculationInterface(numberOne, numberTwo);
+            var calc = new Cost(cost);
+            calc.CalculationInterface(numberOfArms, numberOfLegs);
         }
     }
 }

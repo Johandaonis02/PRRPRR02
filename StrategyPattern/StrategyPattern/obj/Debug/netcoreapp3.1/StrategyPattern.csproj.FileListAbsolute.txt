@@ -1,0 +1,13 @@
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\StrategyPattern\StrategyPattern\obj\Debug\netcoreapp3.1\StrategyPattern.csprojAssemblyReference.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\StrategyPattern\StrategyPattern\obj\Debug\netcoreapp3.1\StrategyPattern.AssemblyInfoInputs.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\StrategyPattern\StrategyPattern\obj\Debug\netcoreapp3.1\StrategyPattern.AssemblyInfo.cs
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\StrategyPattern\StrategyPattern\obj\Debug\netcoreapp3.1\StrategyPattern.csproj.CoreCompileInputs.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\StrategyPattern\StrategyPattern\bin\Debug\netcoreapp3.1\StrategyPattern.exe
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\StrategyPattern\StrategyPattern\bin\Debug\netcoreapp3.1\StrategyPattern.deps.json
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\StrategyPattern\StrategyPattern\bin\Debug\netcoreapp3.1\StrategyPattern.runtimeconfig.json
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\StrategyPattern\StrategyPattern\bin\Debug\netcoreapp3.1\StrategyPattern.runtimeconfig.dev.json
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\StrategyPattern\StrategyPattern\bin\Debug\netcoreapp3.1\StrategyPattern.dll
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\StrategyPattern\StrategyPattern\bin\Debug\netcoreapp3.1\StrategyPattern.pdb
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\StrategyPattern\StrategyPattern\obj\Debug\netcoreapp3.1\StrategyPattern.dll
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\StrategyPattern\StrategyPattern\obj\Debug\netcoreapp3.1\StrategyPattern.pdb
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\StrategyPattern\StrategyPattern\obj\Debug\netcoreapp3.1\StrategyPattern.genruntimeconfig.cache
