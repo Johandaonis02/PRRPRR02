@@ -9,6 +9,9 @@ namespace StrategyPatternDemo.Strategy
         public void Calculate(int numberOfArms, int numberOfLegs)
         {
             var result = 5 * numberOfArms * numberOfLegs;
+
+            result = Cost.AttractivePrice((double)result);
+
             Console.WriteLine("Den kostar " + result + " kr");
         }
     }
