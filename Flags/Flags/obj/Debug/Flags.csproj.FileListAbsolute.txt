@@ -1,0 +1,15 @@
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\bin\Debug\Flags.exe.config
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\bin\Debug\Flags.exe
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\bin\Debug\Flags.pdb
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\obj\Debug\Flags.csprojAssemblyReference.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\obj\Debug\MainWindow.g.cs
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\obj\Debug\App.g.cs
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\obj\Debug\Flags_MarkupCompile.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\obj\Debug\Flags_MarkupCompile.lref
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\obj\Debug\MainWindow.baml
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\obj\Debug\Flags.g.resources
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\obj\Debug\Flags.Properties.Resources.resources
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\obj\Debug\Flags.csproj.GenerateResource.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\obj\Debug\Flags.csproj.CoreCompileInputs.cache
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\obj\Debug\Flags.exe
+C:\Users\johan.daun\Documents\GitHub\PRRPRR02\Flags\Flags\obj\Debug\Flags.pdb

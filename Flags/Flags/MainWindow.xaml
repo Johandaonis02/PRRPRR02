@@ -1,0 +1,23 @@
+﻿<Window x:Class="Flags.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Flags"
+        mc:Ignorable="d"
+        Title="Flags" Height="450" Width="800">
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="TextHello" Height="30" Width="75" Grid.Row="0" Margin="34,125,287.8,55.4" RenderTransformOrigin="-1.771,0.56"/>
+        <Button Click="Knapp1_Click" Name="Knapp1" Content="Hello" Margin="166,100.6,155.8,79" Height="30" Width="75" Grid.Row="1"/>
+    </Grid>
+</Window>
